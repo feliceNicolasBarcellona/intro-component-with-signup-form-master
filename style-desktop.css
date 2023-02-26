@@ -22,7 +22,178 @@ html {
 
 body {
   font-family: var(--font-family-poppins);
+  background-color: var(--red);
 }
 
-.attribution { font-size: 11px; text-align: center; }
+main {
+  max-width: 90rem;
+  height: 98.5vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/bg-intro-desktop.png");
+  background-color: var(--red);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  height: 34.9375rem;
+  width: 69.4375rem;
+  display: flex;
+}
+
+.left {
+  width: 51.3%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.title {
+  font-size: 3.0688rem; 
+  font-weight: 700;
+  line-height: 1.15em; 
+  margin-bottom: 1.6875rem;
+}
+
+.description {
+  color: hsl(0, 0%, 100%);
+  line-height: 1.5em; 
+  font-size: 1.0063rem;
+}
+
+.right {
+  width: 48.6%;
+  text-align: center;
+}
+
+.banner {
+  padding: 1.3438rem;
+  background-color: hsl(248, 32%, 49%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.625rem;
+  box-shadow: 0px 9px 0px  hsla(0, 0%, 0%, 0.2);
+}
+
+.text-banner {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size: 0.9688rem;
+}
+
+br {
+  display: none;
+}
+
+.form {
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.625rem;
+  margin-top: 1.5625rem;
+  box-shadow: 0px 9px 0px  hsla(0, 0%, 0%, 0.2);
+  padding: 40px 40px 44px;
+}
+
+input {
+  width: 100%;
+  border-radius: 0.3125rem;
+  border: 1px solid hsl(0, 0%, 83%);
+  font-weight: 600;
+  position: relative;
+  padding: 17px 1.8125rem;
+  color: var(--dark-blue);
+  font-size: 1.0125rem;
+}
+
+input::placeholder {
+  position: absolute;
+  top: 19px;
+  font-size: 0.9812rem;
+}
+
+input::placeholder.invalid {
+  color: var(--red);
+}
+
+input:focus{
+  outline: none;
+  border: 1px solid var(--blue);
+}
+
+input.invalid {
+  outline: 2px solid var(--red);
+  outline-offset: -2px;
+  box-sizing: border-box;
+}
+
+.input-container {
+  position: relative;
+  text-align: right;
+  margin-bottom: 1.3125rem;
+}
+
+.icon-error {
+  background-image: url('images/icon-error.svg');
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  right: 1.5625rem;
+  top: 0.9375rem;
+  opacity: 0;
+}
+
+.message-error {
+  font-size: 0.6875rem;
+  font-style: italic;
+  color: hsl(0, 100%, 74%);
+  margin-top: 0.5625rem;
+  font-weight: 600;
+}
+
+.btn {
+  text-transform: uppercase;
+  border: 1px solid hsla(153, 37%, 46%, 0.5);
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 0.3125rem;
+  font-size: 0.9313rem;
+  font-weight: 500;
+  border-bottom: 5px solid hsla(153, 37%, 46%, 0.5);
+  padding: 1.25rem 0 0.875rem;
+  letter-spacing: 0.0313rem;
+  margin-bottom: 1.0625rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:hover{
+  border: 1px solid hsla(153, 37%, 46%, 0.25);
+  border-bottom: 5px solid hsla(153, 37%, 46%, 0.25);
+  background-color:hsla(154, 59%, 51%, 0.65);
+}
+
+.conditions {
+  font-size: 0.6844rem;
+  color: hsl(246, 25%, 77%);
+  font-weight: 500;
+}
+
+.terms {
+  color: var(--red);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.attribution { font-size: 11px; text-align: center;}
 .attribution a { color: hsl(228, 45%, 44%); }

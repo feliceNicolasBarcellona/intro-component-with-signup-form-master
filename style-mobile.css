@@ -1,0 +1,52 @@
+@media only screen and (max-width: 480px){
+  main {
+    background-image: url("images/bg-intro-mobile.png");
+    max-width: 480px;
+    padding: 0 24px;
+    height: 130vh;
+  }
+
+  .container {
+    width: 100%;
+    border: 1px dashed yellow;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    height: 212px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 32px;
+    margin: 0 0 26px 0;
+  }
+
+  .description {
+    font-size: 16.1px;
+  }
+
+  .right {
+    width: 100%;
+    height: 554px;
+    margin-top: 66px;
+  }
+
+  .text-banner {
+    text-align: center;
+    line-height: 1.4em;
+  }
+
+  br {
+    display: block;
+  }
+
+  .form {
+    height: 443px;
+    padding: 23px;
+  }
+
+
+}
